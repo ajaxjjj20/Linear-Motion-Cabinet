@@ -3,6 +3,8 @@ import time
 
 class StepperMotor():
 	#Set default values for the pins
+	#Let's take out the stops from the motor class
+	#And create a motor stop class that runs in the background
 	def __init__(self, stp = 7, dirPin = 11, MS1 = 13, MS2 = 15, MS3 = 29, EN = 31, upperLimit = 0, lowerLimit = 0):
 		self.stp = stp
 		self.dirPin = dirPin
